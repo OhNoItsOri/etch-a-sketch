@@ -1,0 +1,22 @@
+.grid {
+    display: flex;   /* <--- required */
+}
+
+.column {
+    flex: 1; /* <--- required (style column to fill the same space as the other columns) */
+}
+
+.row {
+    margin: 2px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+#parentContainer {
+    display: stretch;
+    border: 1px solid black;
+    margin: 1px;
+    padding: 1px;
+}
