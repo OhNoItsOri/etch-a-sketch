@@ -7,11 +7,15 @@
 }
 
 .row {
-    margin: 2px;
+    margin: 1px;
     background: rgb(255, 255, 255);
     text-align: center;
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
+    color: rgb(255, 255, 255, 0);
+    border: 0.5px solid black;
+}
+
+.row:hover {
+    background: black;
 }
 
 #parentContainer {
