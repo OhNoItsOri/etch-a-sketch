@@ -3,11 +3,14 @@
 }
 
 .column {
-    flex: 1; /* <--- required (style column to fill the same space as the other columns) */
+    flex-grow: 1;/* <--- required (style column to fill the same space as the other columns) */
+    /*grow deals with how extra space is used
+    shrink deals with how it reacts with not enough space
+    and basis is how it acts when theres just enough space */
 }
 
 .row {
-    margin: 1px;
+    margin: 0.5px;
     background: rgb(255, 255, 255);
     text-align: center;
     color: rgb(255, 255, 255, 0);
@@ -19,8 +22,11 @@
 }
 
 #parentContainer {
-    display: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 600px;
     border: 1px solid black;
-    margin: 1px;
-    padding: 1px;
+    margin: 0.5px;
+    padding: 0.5px;
 }
